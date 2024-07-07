@@ -50,27 +50,27 @@ export default function Tlv() {
           <div className="flex items-center me-2">
             <input
               id="domainName" checked={showDomainName} onChange={(e) => setShowDomainName(e.target.checked)} type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-            <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Domain Name</label>
+            <label className="ms-2 text-sm font-medium">Domain Name</label>
           </div>
           <div className="flex items-center me-2">
             <input id="registrar" checked={showRegistrar} onChange={(e) => setShowRegistrar(e.target.checked)} type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-            <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Registrar</label>
+            <label className="ms-2 text-sm font-medium">Registrar</label>
           </div>
           <div className="flex items-center me-2">
             <input id="registrationDate" checked={showRegistrationDate} onChange={(e) => setShowRegistrationDate(e.target.checked)} type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-            <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Registration Date</label>
+            <label className="ms-2 text-sm font-medium">Registration Date</label>
           </div>
           <div className="flex items-center me-2">
             <input id="expirationDate" checked={showExpirationDate} onChange={(e) => setShowExpirationDate(e.target.checked)} type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-            <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Expiration Date</label>
+            <label className="ms-2 text-sm font-medium">Expiration Date</label>
           </div>
           <div className="flex items-center me-2">
             <input id="estimatedDomainAge" checked={showEstimatedDomainAge} onChange={(e) => setShowEstimatedDomainAge(e.target.checked)} type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-            <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Estimated Domain Age</label>
+            <label className="ms-2 text-sm font-medium">Estimated Domain Age</label>
           </div>
           <div className="flex items-center me-2">
             <input id="hostnames" checked={showHostnames} onChange={(e) => setShowHostnames(e.target.checked)} type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-            <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Hostnames</label>
+            <label className="ms-2 text-sm font-medium">Hostnames</label>
           </div>
         </div>
       </div>
