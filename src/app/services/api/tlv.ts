@@ -1,7 +1,8 @@
 import axios, { AxiosRequestConfig } from "axios";
 
 const corsProxy = 'https://cors-anywhere.herokuapp.com/';
-const server = `${corsProxy}https://www.whoisxmlapi.com/whoisserver/WhoisService`;
+// const server = `${corsProxy}https://www.whoisxmlapi.com/whoisserver/WhoisService`;//with cors for testing
+const server = `https://www.whoisxmlapi.com/whoisserver/WhoisService`;//with cors for testing
 const whoisKey = 'at_62Han0z5ayCSyQlmMVWUiO6agSCpw';
 
 export const getDomainDetails = async (domainNameValue: string) => {
