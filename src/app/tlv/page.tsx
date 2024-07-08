@@ -43,6 +43,7 @@ export default function Tlv() {
         <h5>-A frontend interface to interact with the Whois API.</h5>
         <h5>-This app allows users to retrieve essential details about a given domain.</h5>
         <p className="mt-5">Crafted with care by: Jmendiola</p>
+        <p className="">Deployed on Vercel.com</p>
       </span>
       <div className=" ps-4 border border-gray-200 rounded dark:border-gray-700 pt-3 mb-3">
         <h3 className="text-xl mb-2">Domain Information filter</h3>

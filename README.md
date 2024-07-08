@@ -13,8 +13,15 @@ pnpm dev
 # or
 bun dev
 ```
+## Setup CORS and WHOIS API Key in `.env.local`
+
+```env
+NEXT_PUBLIC_X_CORS_API_KEY=yourCorsAPIKey  # Get it here: https://cors.sh/
+NEXT_PUBLIC_WHOIS_API_KEY=yourWhoisApiKey  # Get it here: https://whois.whoisxmlapi.com/documentation/making-requests
+
 
 Open [http://localhost:5000/tlv](http://localhost:5000/tlv) with your browser to see the result.
+
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
