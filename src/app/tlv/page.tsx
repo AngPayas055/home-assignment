@@ -33,7 +33,8 @@ export default function Tlv() {
     searchLabel,
     isDisabled,
     searchErrorLabel,
-    isSearchError
+    isSearchError,
+    formatDate
   } = useTlvHook();
 
   return (
@@ -142,8 +143,8 @@ export default function Tlv() {
               <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 {showDomainName && <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{domainDetails.WhoisRecord.domainName}</td>}
                 {showRegistrar && <td className="px-6 py-4">{domainDetails.WhoisRecord.registrarName}</td>}
-                {showRegistrationDate && <td className="px-6 py-4">{domainDetails.WhoisRecord.createdDate}</td>}
-                {showExpirationDate && <td className="px-6 py-4">{domainDetails.WhoisRecord.expiresDate}</td>}
+                {showRegistrationDate && <td className="px-6 py-4">{formatDate(domainDetails.WhoisRecord.createdDate)}</td>}
+                {showExpirationDate && <td className="px-6 py-4">{formatDate(domainDetails.WhoisRecord.expiresDate)}</td>}
                 {showEstimatedDomainAge && <td className="px-6 py-4">{domainDetails.WhoisRecord.estimatedDomainAge}</td>}
                 {showHostnames && <td className="px-6 py-4">{truncateString(domainDetails?.WhoisRecord?.nameServers?.hostNames?.join(', ') || '-', 25)}</td>}
               </tr>

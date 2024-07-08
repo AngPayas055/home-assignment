@@ -73,6 +73,16 @@ export function useTlvHook() {
     return str.slice(0, num) + "...";
   };
 
+  const formatDate = (dateString: string) => {
+    const dateObject = new Date(dateString);
+    const formattedDate = dateObject.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    });
+    return formattedDate
+  }
+
   return {
     domainDetails,
     showDomainName,
@@ -102,6 +112,7 @@ export function useTlvHook() {
     searchLabel,
     isDisabled,
     searchErrorLabel,
-    isSearchError
+    isSearchError,
+    formatDate
   };
 }
