@@ -81,19 +81,19 @@ export default function Tlv() {
         <div className="flex items-center flex-wrap mb-5">
           <div className="flex items-center me-2">
             <input id="registrantName" checked={showRegistrantName} onChange={(e) => setShowRegistrantName(e.target.checked)} type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-            <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Registrant Name</label>
+            <label className="ms-2 text-sm font-medium">Registrant Name</label>
           </div>
           <div className="flex items-center me-2">
             <input id="technicalContactName" checked={showTechnicalContactName} onChange={(e) => setShowTechnicalContactName(e.target.checked)} type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-            <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Technical Contact Name</label>
+            <label className="ms-2 text-sm font-medium">Technical Contact Name</label>
           </div>
           <div className="flex items-center me-2">
             <input id="administrativeContactName" checked={showAdministrativeContactName} onChange={(e) => setShowAdministrativeContactName(e.target.checked)} type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-            <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Administrative Contact Name</label>
+            <label className="ms-2 text-sm font-medium">Administrative Contact Name</label>
           </div>
           <div className="flex items-center me-2">
             <input id="contactEmail" checked={showContactEmail} onChange={(e) => setshowContactEmail(e.target.checked)} type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-            <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Contact Email</label>
+            <label className="ms-2 text-sm font-medium">Contact Email</label>
           </div>
         </div>
       </div>
