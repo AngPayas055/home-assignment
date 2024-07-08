@@ -1,24 +1,23 @@
 import axios, { AxiosRequestConfig } from "axios";
 
 const corsProxyMedium = 'https://proxy.cors.sh/';//cors.sh free cors proxy
-const xCorsApiKey = 'temp_8aeed4412a20e06790e3d4b3fa91baf0'//generated from https://cors.sh/
 const server = `${corsProxyMedium}https://www.whoisxmlapi.com/whoisserver/WhoisService`;//with cors for testing
 // const server = `https://www.whoisxmlapi.com/whoisserver/WhoisService`;//without cors proxy
-const whoisKey = 'at_62Han0z5ayCSyQlmMVWUiO6agSCpw';
 
 export const getDomainDetails = async (domainNameValue: string) => {
+  console.log(process.env.NEXT_PUBLIC_X_CORS_API_KEY)
   try {
     const data = {
       domainName: domainNameValue,
       outputFormat: "JSON",
-      apiKey: whoisKey,
+      apiKey: process.env.NEXT_PUBLIC_WHOIS_API_KEY,
     };
 
     const options: AxiosRequestConfig = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        'x-cors-api-key': xCorsApiKey
+        'x-cors-api-key': process.env.NEXT_PUBLIC_X_CORS_API_KEY
       },
       data,
     };
